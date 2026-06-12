@@ -1,0 +1,17 @@
+{
+  "name": "Second Chance — Story Dating",
+  "short_name": "Second Chance",
+  "description": "Meet people through stories, not selfies. Minimalist, personality-driven connections.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait"
+}

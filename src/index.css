@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-primary: #1D1D1F;
+  --color-brand-secondary: #8E8E93;
+  --color-brand-accent: #D97706; /* Kintsugi Ochre Gold */
+  --color-brand-accent-faded: #FAF9FB;
+  --color-surface-bg: #FBFBFB; /* High Density background tone */
+  --color-surface-card: #FFFFFF; /* High contrast crisp white card */
+  --color-border-subtle: #E5E5EA; /* Premium thin Apple border */
+}
+
+/* Base custom interactive states and hidden scrollbar options */
+@layer base {
+  body {
+    background-color: var(--color-surface-bg);
+    color: var(--color-brand-primary);
+  }
+  
+  /* Retain smooth responsive form focus states */
+  input, textarea, select {
+    outline: none;
+    transition: all 150ms ease-in-out;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--color-brand-primary);
+    box-shadow: 0 0 0 2px rgba(29, 29, 31, 0.05);
+  }
+}
+
+/* Utilities */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

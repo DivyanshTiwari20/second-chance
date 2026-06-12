@@ -1,0 +1,6 @@
+{
+  "name": "Second Chance",
+  "description": "Meet people through stories, not selfies. A personality-first dating app matching people based on experiences, breakup stories, and relationship insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
